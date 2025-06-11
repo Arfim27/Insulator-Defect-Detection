@@ -1,30 +1,17 @@
-# Insulator Defect Detection with Modified YOLOv8
-Muchamad Arfim Muzaki. 2025. Development of The YOLOv8n Algorithm for Surface Insulator Defect Detection. Prof. Dr. Subiyanto, S.T., M.T. Program of Electrical Engineering Education, Faculty of Engineering, Universitas Negeri Semarang.
-
-This repository contains a modified version of YOLOv8 using a custom module for insulator defect detection.
-
-## Dataset
-Google Drive download link：https://drive.google.com/file/d/1CPLCAwbD0cKcejCxESrrDicPeUmfrBcj/view?usp=drive_link
-
 <div align="left">
 
-# <div align="center">IDD-YOLOv5: A Lightweight Insulator Defect Real-time Detection Algorithm</div>
+# <div align="center">Muchamad Arfim Muzaki. 2025. Development of The YOLOv8n Algorithm for Surface Insulator Defect Detection. Prof. Dr. Subiyanto, S.T., M.T. Program of Electrical Engineering Education, Faculty of Engineering, Universitas Negeri Semarang.</div>
 
 ## Dataset
-***I will first provide links to Baidu.com discs for some of the datasets. More specific datasets involve confidential information from Tianjin Grid, and I need to discuss with them whether they can be made public. However, the datasets I provided are sufficient for code debugging and model training. The links to the datasets are below:***
 
-**Link:** https://pan.baidu.com/s/1inULMZcnibOsfjXvJQiFjQ
+**Google Drive download link：** https://drive.google.com/file/d/1CPLCAwbD0cKcejCxESrrDicPeUmfrBcj/view?usp=drive_link
 
-**Extraction code:** 8kdy
-
-**Google Drive download link：** https://drive.google.com/file/d/1QOFg5iCop9Jb9uAjiNelYvELOmUWGMs-/view?usp=drive_link
 
 
 ## Introduction
-This is our PyTorch implementation of the paper "[`IDD-YOLOv5: A Lightweight Insulator Defect Real-time Detection Algorithm`](https://doi.org/10.1109/icma61710.2024.10632897)" published in ***2024 IEEE International Conference on Mechatronics and Automation (ICMA)***.
+This is Skripsi "Muchamad Arfim Muzaki. 2025. Development of The YOLOv8n Algorithm for Surface Insulator Defect Detection. Prof. Dr. Subiyanto, S.T., M.T. Program of Electrical Engineering Education, Faculty of Engineering, Universitas Negeri Semarang" 
 
 <div align="center">
-    <img src="IDD-YOLOv5.png" width="1000" alt="IDD-YOLOv5">
 </div>
 
 ## <div align="left">Quick Start Examples</div>
@@ -33,22 +20,20 @@ This is our PyTorch implementation of the paper "[`IDD-YOLOv5: A Lightweight Ins
 <summary>Install</summary>
 
 First, clone the project and configure the environment.
-[**Python>=3.7.0**](https://www.python.org/), [**PyTorch>=1.7**](https://pytorch.org/get-started/locally/).
+[**Python>=3.8.5**](https://www.python.org/), [**PyTorch**](https://pytorch.org/get-started/locally/).
 
 ```bash
-git clone https://github.com/LuYang-2023/ICMA2024.git  # clone
-cd ICMA2024
-pip install -r requirements.txt  # install
+git clone https://github.com/Arfim27/Insulator-Defect-Detection.git
+cd Insulator-Defect-Detection
+pip install -r requirements.txt
 ```
 </details>
 
 <details open>
 <summary>Train</summary>
 
-
-
 ```python
-python train.py --cfg models/IDD-yolov5.yaml --data data/insulator_detection.yaml
+python train.py 
 ```
 </details>
 
@@ -58,31 +43,17 @@ python train.py --cfg models/IDD-yolov5.yaml --data data/insulator_detection.yam
 
 
 ```bash
-python val.py --data data/mydata.yaml --weights best.pt --task test
+python yolo val model="your best.pt" data= "your dataset"
+
 ```
 </details>
 
 
-
-
 ### Citation
-If you use this code or article in your research, please cite it using the following BibTeX entry:
-
-```bibtex
-@INPROCEEDINGS{10632897,
-  author={Lu, Yang and Li, Dahua and Gao, Qiang and Yu, Xiao and Li, Xuan and Bai, Zhongli},
-  booktitle={2024 IEEE International Conference on Mechatronics and Automation (ICMA)}, 
-  title={IDD-YOLOv5: A Lightweight Insulator Defect Real-time Detection Algorithm}, 
-  year={2024},
-  volume={},
-  number={},
-  pages={491-495},
-  keywords={YOLO;Adaptation models;Accuracy;Power transmission lines;Insulators;Real-time systems;Neck;Defect detection;Insulator;Lightweight;Deep learning;YOLOv5},
-  doi={10.1109/ICMA61710.2024.10632897}}
-```
+If you use this code or article in your research, please cite it using the following:
 
 
 ## Author's Contact
-Email：yj20220275@stud.tjut.edu.cn
+Email：muchamadarfimmzaki@students.unnes.ac.id
 
 
